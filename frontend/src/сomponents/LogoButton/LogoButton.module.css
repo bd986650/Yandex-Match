@@ -1,0 +1,44 @@
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: clamp(2rem, 2.5vw, 4rem);
+  font-weight: 900;
+}
+
+.brand__letter {
+  color: #fc3f1d;
+}
+
+.brand__text {
+  color: #1e1e1e;
+}
+
+.brand__logo {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.brand__logo img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  animation: spin 5s linear infinite;
+  transition: scale 0.5s ease;
+  scale: 1.2;
+}
+
+.brand__logo:hover img {
+  scale: 1.3;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
