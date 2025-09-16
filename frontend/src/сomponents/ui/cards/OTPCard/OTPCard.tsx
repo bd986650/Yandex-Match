@@ -9,7 +9,7 @@ import OTPInput from "@/сomponents/ui/inputs/OTPInput/OTPInput";
 import { useOTP } from "@/hooks/useOTP";
 import MaskedPhoneText from "@/сomponents/ui/texts/maskedPhone/MaskedPhoneText";
 
-export default function OTPCard({ onBack }: { onBack: () => void }) {
+export default function OTPCard({ onBack, onSuccess }: { onBack: () => void; onSuccess?: (code: string) => void }) {
   const {
     otp,
     timer,
@@ -17,7 +17,7 @@ export default function OTPCard({ onBack }: { onBack: () => void }) {
     handleKeyDown,
     handleSubmit,
     handleResend,
-  } = useOTP(6);
+  } = useOTP(6, onSuccess);
 
   return (
     <main>

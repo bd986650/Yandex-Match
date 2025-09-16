@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 
 import LoginCard from "@/сomponents/ui/cards/LoginCard/LoginCard";
@@ -10,6 +11,7 @@ import AuthPageFooter from "@/сomponents/ui/footers/AuthPageFooter/AuthPageFoot
 
 export default function LoginPage() {
   const [isOTP, setIsOTP] = useState(false);
+  const router = useRouter();
 
   return (
     <div className={styles.page}>
@@ -19,7 +21,7 @@ export default function LoginPage() {
         <div className={styles.page__authCard}>
           <AuthCardWrapper isOTP={isOTP}>
             {isOTP ? (
-              <OTPCard onBack={() => setIsOTP(false)} />
+              <OTPCard onBack={() => setIsOTP(false)} onSuccess={() => router.push('/home')} />
             ) : (
               <LoginCard onNext={() => setIsOTP(true)} />
             )}
