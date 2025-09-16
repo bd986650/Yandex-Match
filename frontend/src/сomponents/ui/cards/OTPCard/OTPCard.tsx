@@ -7,6 +7,7 @@ import ConfirmOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/Co
 import ResendOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/ResendOTPButton/ResendOTPButton";
 import OTPInput from "@/сomponents/ui/inputs/OTPInput/OTPInput";
 import { useOTP } from "@/hooks/useOTP";
+import MaskedPhoneText from "@/сomponents/ui/texts/maskedPhone/MaskedPhoneText";
 
 export default function OTPCard({ onBack }: { onBack: () => void }) {
   const {
@@ -33,7 +34,9 @@ export default function OTPCard({ onBack }: { onBack: () => void }) {
       </div>
 
       <h1 className={styles.card__title}>Enter the code from the SMS</h1>
-      <h2 className={styles.card__subtitle}>Sent to +7 913 ***-**-62</h2>
+      <h2 className={styles.card__subtitle}>
+        <MaskedPhoneText />
+      </h2>
 
       <div className={styles.otpInputs}>
         {otp.map((digit, index) => (

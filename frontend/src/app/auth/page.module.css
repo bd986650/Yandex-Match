@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.background {
+.page__background {
   position: fixed;
   top: 0;
   left: 0;
@@ -26,9 +26,11 @@
   align-items: center;
   width: 100%;
   flex-direction: column;
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
 }
 
-.authCard {
+.page__authCard {
   width: 100%;
   max-width: 376px;
   padding: clamp(1rem, 3vw, 2rem);
@@ -56,31 +58,34 @@
   margin-bottom: 1.5rem;
 }
 
-.yandexInfo {
+.page__yandexInfo {
   color: #fff;
   font-size: 0.95rem;
   text-align: center;
   margin-top: 1rem;
 }
 
-.yandexInfo__title {
+.page__yandexInfoTitle {
   font-size: 1rem;
   font-weight: 500;
 }
 
-.yandexInfo__link {
+.page__yandexInfoLink {
   margin-top: 5px;
   font-size: 1rem;
   font-weight: 900;
   display: inline-block;
 }
 
-.yandexInfo__link:hover {
+.page__yandexInfoLink:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
   .page {
     padding-bottom: 16px;
+  }
+  .page__authCard {
+    max-width: 92vw;
   }
 }

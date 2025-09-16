@@ -1,10 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useOtpStore } from "@/store/otpStore";
+import { usePhoneStore } from "@/store/phoneStore";
 
 export function useOTP(length: number = 6) {
   const [otp, setOtp] = useState<string[]>(Array(length).fill(""));
   const [timer, setTimer] = useState(60);
+  const router = useRouter();
+  const setCode = useOtpStore((s) => s.setCode);
+  const rawPhone = usePhoneStore((s) => s.rawPhoneDigits);
 
   useEffect(() => {
     if (timer > 0) {
@@ -34,7 +40,9 @@ export function useOTP(length: number = 6) {
   };
 
   const handleSubmit = () => {
-    alert(`Проверка кода: ${otp.join("")}`);
+    const code = otp.join("");
+    setCode(code);
+    router.push("/home");
   };
 
   const handleResend = () => {

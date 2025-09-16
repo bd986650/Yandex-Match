@@ -13,10 +13,10 @@ export default function LoginPage() {
 
   return (
     <div className={styles.page}>
-      <div className={styles.background} />
+      <div className={styles.page__background} />
 
       <div className={styles.page__content}>
-        <div className={styles.authCard}>
+        <div className={styles.page__authCard}>
           <AuthCardWrapper isOTP={isOTP}>
             {isOTP ? (
               <OTPCard onBack={() => setIsOTP(false)} />
@@ -26,11 +26,11 @@ export default function LoginPage() {
           </AuthCardWrapper>
         </div>
 
-        <section className={styles.yandexInfo}>
-          <h3 className={styles.yandexInfo__title}>
+        <section className={styles.page__yandexInfo}>
+          <h3 className={styles.page__yandexInfoTitle}>
             Yandex ID. The key to all your services
           </h3>
-          <a href="https://yandex.ru/id/about" className={styles.yandexInfo__link}>
+          <a href="https://yandex.ru/id/about" className={styles.page__yandexInfoLink}>
             Learn more
           </a>
         </section>

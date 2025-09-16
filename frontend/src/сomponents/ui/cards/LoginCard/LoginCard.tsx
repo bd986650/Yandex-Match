@@ -9,10 +9,10 @@ export default function LoginCard({ onNext }: { onNext: () => void }) {
         <main>
             <YandexIDLogo />
 
-            <h1 className={styles.title}>
+            <h1 className={styles.loginCard__title}>
                 Enter your<br />phone number
             </h1>
-            <h2 className={styles.subtitle}>To log in or register</h2>
+            <h2 className={styles.loginCard__subtitle}>To log in or register</h2>
 
             <NumberInput />
             <LoginButton onClick={onNext} /> {/* вызовет переключение */}
