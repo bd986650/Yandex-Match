@@ -1,0 +1,41 @@
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.header__back {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card__title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "YS Text", Arial, sans-serif;
+  text-align: center;
+  margin: 1.9rem 0 0.5rem;
+}
+
+.card__subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "YS Text", Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.otpInputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}

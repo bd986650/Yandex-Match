@@ -1,0 +1,40 @@
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-weight: 900;
+}
+
+.brand__letter {
+  color: #fc3f1d;
+}
+
+.brand__text {
+  color: #1e1e1e;
+}
+
+.brand__logo {
+  width: clamp(28px, 6vw, 48px);
+  height: clamp(28px, 6vw, 48px);
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.brand__logo img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  /* animation: spin 8s linear infinite; */
+  transition: scale 0.5s ease;
+  scale: 1.2;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

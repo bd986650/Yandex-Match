@@ -1,0 +1,21 @@
+.resendWrapper {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.resendText {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.resendBtn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.resendBtn:hover {
+  text-decoration: underline;
+}

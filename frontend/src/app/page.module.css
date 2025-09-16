@@ -26,7 +26,7 @@
   padding: 10px 40px;
   background-color: transparent;
   border: #1e1e1e solid 2px;
-  border-radius: 15px;
+  border-radius: 30px;
 }
 
 .auth__button:hover {
@@ -35,7 +35,7 @@
   background-color: #1e1e1e;
 }
 
-.hero {
+/* .hero {
   position: relative;
   width: 40vw;
   aspect-ratio: 1 / 1;
@@ -49,12 +49,7 @@
   background: linear-gradient(93.75deg, #f7ce46 3.76%, #fbe27e 90.19%);
   transform: rotate(-61.3deg);
   z-index: 1;
-  /* transition: transform 1s ease; */
 }
-
-/* .hero:hover .hero__circle {
-  transform: rotate(-61.3deg) scale(1.1);
-} */
 
 .hero__image {
   position: absolute;
@@ -71,9 +66,6 @@
 }
 
 .slogan {
-  position: absolute;
-  top: 70%;
-  left: 77%;
   transform: translate(-50%, -50%);
   font-size: clamp(3rem, 6vw, 8rem);
   font-weight: 900;
@@ -91,4 +83,5 @@
 .slogan__subtitle {
   padding-left: 25px;
   color: #1e1e1e;
-}
+} */
+

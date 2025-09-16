@@ -32,6 +32,43 @@ body {
   margin: 0;
 }
 
+/* Fluid типографика и утилиты контейнера */
+:root {
+  --container-max: 1200px;
+  --container-pad: clamp(12px, 4vw, 32px);
+  --font-size-base: clamp(14px, 1.6vw, 16px);
+}
+
+body {
+  font-size: var(--font-size-base);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Медиа должны быть по ширине контейнера и не ломать верстку */
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Уважение к reduce-motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;

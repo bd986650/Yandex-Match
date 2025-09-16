@@ -1,0 +1,15 @@
+.nextBtn {
+  height: clamp(48px, 7vw, 56px);
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  color: black;
+  font-size: clamp(0.95rem, 2.8vw, 1rem);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nextBtn:hover {
+  opacity: 0.8;
+}

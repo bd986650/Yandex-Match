@@ -1,0 +1,22 @@
+.loginButton {
+  position: relative;
+  height: clamp(48px, 7vw, 56px);
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  font-size: clamp(0.95rem, 2.8vw, 1rem);
+  font-weight: 600;
+}
+
+.loginButton:hover {
+  opacity: 0.8;
+}
