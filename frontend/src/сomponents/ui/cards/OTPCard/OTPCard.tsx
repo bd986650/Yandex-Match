@@ -7,7 +7,7 @@ import ConfirmOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/Co
 import ResendOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/ResendOTPButton/ResendOTPButton";
 import OTPInput from "@/сomponents/ui/inputs/OTPInput/OTPInput";
 import { useOTP } from "@/hooks/useOTP";
-import MaskedPhoneText from "@/сomponents/ui/texts/maskedPhone/MaskedPhoneText";
+import MaskedPhoneText from "@/сomponents/ui/texts/MaskedPhone/MaskedPhoneText";
 
 export default function OTPCard({ onBack, onSuccess }: { onBack: () => void; onSuccess?: (code: string) => void }) {
   const {

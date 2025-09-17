@@ -15,7 +15,7 @@ export default function LoginCard({ onNext }: { onNext: () => void }) {
             <h2 className={styles.loginCard__subtitle}>To log in or register</h2>
 
             <NumberInput />
-            <LoginButton onClick={onNext} /> {/* вызовет переключение */}
+            <LoginButton onClick={onNext} />
         </main>
     )
 }
