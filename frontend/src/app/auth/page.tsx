@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 import LoginCard from "@/components/ui/cards/LoginCard/LoginCard";
 import OTPCard from "@/components/ui/cards/OTPCard/OTPCard";
 import AuthCardWrapper from "@/components/ui/wrappers/AuthCardWrapper/AuthCardWrapper";
-import AuthPageFooter from "@/components/ui/footers/AuthPageFooter/AuthPageFooter";
+import AuthPageFooter from "@/components/layout/footers/AuthPageFooter/AuthPageFooter";
 
 export default function LoginPage() {
   const [isOTP, setIsOTP] = useState(false);

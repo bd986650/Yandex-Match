@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./LandingHeader.module.css";
 
-import LogoButton from "../../buttons/LogoButton/LogoButton";
+import LogoButton from "@/components/ui/buttons/LogoButton/LogoButton";
 
 export default function LandingHeader() {
     return (
