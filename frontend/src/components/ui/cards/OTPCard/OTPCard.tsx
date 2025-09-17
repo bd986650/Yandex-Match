@@ -10,7 +10,7 @@ import ResendOTPButton from "@/components/ui/buttons/AuthButtons/OTPButtons/Rese
 import MaskedPhoneText from "../../texts/MaskedPhone/MaskedPhoneText";
 
 import OTPInput from "@/components/ui/inputs/OTPInput/OTPInput";
-import { useOTP } from "@/hooks/useOTP";
+import { useOTP } from "@/hooks/useOTP/useOTP";
 
 
 export default function OTPCard({ onBack, onSuccess }: { onBack: () => void; onSuccess?: (code: string) => void }) {

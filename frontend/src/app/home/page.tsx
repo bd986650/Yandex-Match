@@ -1,7 +1,7 @@
 "use client";
 
-import { useOtpStore } from "@/store/otpStore";
-import { usePhoneStore } from "@/store/phoneStore";
+import { useOtpStore } from "@/store/otpStore/otpStore";
+import { usePhoneStore } from "@/store/phoneStore/phoneStore";
 
 export default function HomePage() {
     const code = useOtpStore((s) => s.code);

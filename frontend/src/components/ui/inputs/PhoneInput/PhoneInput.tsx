@@ -2,8 +2,8 @@
 
 import React, { useState, useRef } from "react";
 import styles from "./PhoneInput.module.css";
-import { formatPhoneNumber } from "@/utils/formatPhoneNumber";
-import { usePhoneStore } from "@/store/phoneStore";
+import { formatPhoneNumber } from "@/utils/formatPhoneNumber/formatPhoneNumber";
+import { usePhoneStore } from "@/store/phoneStore/phoneStore";
 
 const PhoneInput: React.FC = () => {
   const [value, setValue] = useState("");

@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { usePhoneStore } from "@/store/phoneStore";
-import { getMaskedPhoneForOTPCard } from "@/utils/getMaskedPhoneForOTPCard";
+import { usePhoneStore } from "@/store/phoneStore/phoneStore";
+import { getMaskedPhoneForOTPCard } from "@/utils/getMaskedPhoneForOTPCard/getMaskedPhoneForOTPCard";
 
 import { TMaskedPhoneTextProps } from "@/shared/types/texts";
 

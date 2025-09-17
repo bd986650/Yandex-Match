@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useOtpStore } from "@/store/otpStore";
+import { useOtpStore } from "@/store/otpStore/otpStore";
 
 export function useOTP(length: number = 6, onSuccess?: (code: string) => void) {
   const [otp, setOtp] = useState<string[]>(Array(length).fill(""));
