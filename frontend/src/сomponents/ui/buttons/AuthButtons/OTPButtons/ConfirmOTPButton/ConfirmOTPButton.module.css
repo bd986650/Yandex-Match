@@ -13,3 +13,14 @@
 .nextBtn:hover {
   opacity: 0.8;
 }
+
+.nextBtn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.nextBtn.disabled:hover {
+  opacity: 0.6;
+}

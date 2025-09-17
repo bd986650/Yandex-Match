@@ -2,22 +2,24 @@ import React from "react";
 import styles from "./LoginButton.module.css";
 
 type LoginButtonProps = {
-  onClick?: () => void; // теперь можно передавать свой коллбек
+  onClick?: () => void;
+  disabled?: boolean;
 };
 
-export default function LoginButton({ onClick }: LoginButtonProps) {
+export default function LoginButton({ onClick, disabled = false }: LoginButtonProps) {
   const handleClick = () => {
-    if (onClick) {
+    if (onClick && !disabled) {
       onClick();
     }
   };
 
   return (
     <button
-      className={styles.loginButton}
+      className={`${styles.loginButton} ${disabled ? styles.disabled : ''}`}
       onClick={handleClick}
+      disabled={disabled}
     >
-      Log in
+      {disabled ? "Отправка..." : "Log in"}
     </button>
   );
 }

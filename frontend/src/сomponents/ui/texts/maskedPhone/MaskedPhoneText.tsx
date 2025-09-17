@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { usePhoneStore, getMaskedForOtp } from "@/store/phoneStore";
+import { usePhoneStore } from "@/store/phoneStore";
+import { getMaskedPhoneForOTPCard } from "@/utils/getMaskedPhoneForOTPCard";
 
-import { TMaskedPhoneTextProps } from "@/shared/types/texts";
+import { TMaskedPhoneTextProps } from "@/shared/types/ui/texts";
 
 const MaskedPhoneText: React.FC<TMaskedPhoneTextProps> = ({
   prefix = "Sent to ",
@@ -11,7 +12,7 @@ const MaskedPhoneText: React.FC<TMaskedPhoneTextProps> = ({
   fallback = "Enter your phone number first",
 }) => {
   const maskedPhone = usePhoneStore((s) => s.maskedPhone);
-  const otpMasked = getMaskedForOtp(maskedPhone);
+  const otpMasked = getMaskedPhoneForOTPCard(maskedPhone);
 
   return (
     <span className={className}>

@@ -2,7 +2,7 @@
 
 import styles from "./OTPInput.module.css";
 
-import { IOTPInputProps } from "@/shared/types/inputs";
+import { IOTPInputProps } from "@/shared/types/ui/inputs";
 
 export default function OTPInput({ id, value, onChange, onKeyDown }: IOTPInputProps) {
   return (

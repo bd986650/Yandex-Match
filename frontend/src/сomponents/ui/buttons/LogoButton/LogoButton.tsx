@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./LogoButton.module.css";
 import LogoImage from "../../../../../public/logo.svg";
-import { ILogoButtonProps } from "../../../../shared/types/button";
+import { ILogoButtonProps } from "../../../../shared/types/ui/button";
 
 export default function LogoButton({ route, isActive = true, action }: ILogoButtonProps) {
     const Content = (
