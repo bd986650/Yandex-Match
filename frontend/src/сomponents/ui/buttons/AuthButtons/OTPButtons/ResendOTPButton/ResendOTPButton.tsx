@@ -20,3 +20,4 @@ export default function ResendOTPButton({ timer, onResend }: ResendOTPButtonProp
     </div>
   );
 }
+
