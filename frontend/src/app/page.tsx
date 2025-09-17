@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 
-import LandingHeader from "@/сomponents/ui/headers/LandingHeader/LandingHeader";
+import LandingHeader from "@/components/ui/headers/LandingHeader/LandingHeader";
 
 export default function LandingPage() {
   return (

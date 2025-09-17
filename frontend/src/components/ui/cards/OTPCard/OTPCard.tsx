@@ -5,11 +5,11 @@ import styles from "./OTPCard.module.css";
 import YandexIDLogo from "../../icons/YandexIDIcon/YandexIDIcon";
 import BackIcon from "../../icons/BackIcon/BackIcon";
 
-import ConfirmOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/ConfirmOTPButton/ConfirmOTPButton";
-import ResendOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/ResendOTPButton/ResendOTPButton";
+import ConfirmOTPButton from "@/components/ui/buttons/AuthButtons/OTPButtons/ConfirmOTPButton/ConfirmOTPButton";
+import ResendOTPButton from "@/components/ui/buttons/AuthButtons/OTPButtons/ResendOTPButton/ResendOTPButton";
 import MaskedPhoneText from "../../texts/MaskedPhone/MaskedPhoneText";
 
-import OTPInput from "@/сomponents/ui/inputs/OTPInput/OTPInput";
+import OTPInput from "@/components/ui/inputs/OTPInput/OTPInput";
 import { useOTP } from "@/hooks/useOTP";
 
 
