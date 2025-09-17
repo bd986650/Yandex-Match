@@ -1,13 +1,17 @@
 "use client";
 
 import styles from "./OTPCard.module.css";
+
 import YandexIDLogo from "../../icons/YandexIDIcon/YandexIDIcon";
 import BackIcon from "../../icons/BackIcon/BackIcon";
+
 import ConfirmOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/ConfirmOTPButton/ConfirmOTPButton";
 import ResendOTPButton from "@/сomponents/ui/buttons/AuthButtons/OTPButtons/ResendOTPButton/ResendOTPButton";
+import MaskedPhoneText from "../../texts/MaskedPhone/MaskedPhoneText";
+
 import OTPInput from "@/сomponents/ui/inputs/OTPInput/OTPInput";
 import { useOTP } from "@/hooks/useOTP";
-import MaskedPhoneText from "@/сomponents/ui/texts/MaskedPhone/MaskedPhoneText";
+
 
 export default function OTPCard({ onBack, onSuccess }: { onBack: () => void; onSuccess?: (code: string) => void }) {
   const {
